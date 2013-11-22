@@ -16,3 +16,8 @@
         %a{:href => "/list/calc_request"} list of Tuples matches ["calc_request"]
       %li
         %a{:href => "/list/calc_result"} list of Tuples matches ["calc_result"]
+    %hr
+      - url = "https://github.com/shokai/linda-hello-world"
+      Sinatra::RocketIO::Linda v#{Sinatra::RocketIO::Linda::VERSION}
+      |
+      %a{:href => url}= url
