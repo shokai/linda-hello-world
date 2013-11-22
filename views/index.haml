@@ -1,0 +1,18 @@
+!!!XHTML
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'UTF-8'}
+    %title Linda on RocketIO
+  %body
+    %h1 Linda on RocketIO
+    %ul
+      %li
+        %a{:href => "/worker"} calc worker
+        %div write a Tuple ["calc_request", "code"]
+      %li
+        %a{:href => "/client"} calc client
+        %div read ["calc_request"] and write ["calc_result", result]
+      %li
+        %a{:href => "/list/calc_request"} list of Tuples matches ["calc_request"]
+      %li
+        %a{:href => "/list/calc_result"} list of Tuples matches ["calc_result"]
